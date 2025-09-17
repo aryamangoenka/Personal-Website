@@ -519,7 +519,6 @@ export default function Portfolio() {
                 <Zap className="mr-2 h-5 w-5" />
                 Let's Connect
               </Button>
-              
             </motion.div>
           </motion.div>
 
@@ -881,7 +880,7 @@ export default function Portfolio() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <InteractiveProjectCard
               title="Neural Network Builder"
               description="Drag-and-drop interface for designing and training neural networks"
@@ -903,23 +902,43 @@ export default function Portfolio() {
             />
 
             <InteractiveProjectCard
-              title="CarVision AI"
-              description="Computer vision system for autonomous vehicle detection"
+              title="Modelic"
+              description="ML Deployment & Monitoring Platform with automated GitHub integration"
               details={[
-                "Sliding window algorithm with 75.56% accuracy",
-                "Custom CNN achieving 96.21% training accuracy",
-                "Transfer learning with VGG16 (84.44% performance)",
-                "Real-time vehicle detection and tracking",
+                "Automated GitHub-based model deployment (30s latency)",
+                "24h drift detection using PSI and KL-Divergence",
+                "Real-time inference dashboard and monitoring",
+                "Automated alerts with rollback capabilities",
               ]}
               technologies={[
-                "Python",
-                "TensorFlow",
-                "OpenCV",
-                "Pandas",
-                "VGG16",
+                "FastAPI",
+                "Celery",
+                "Supabase",
+                "GitHub Actions",
+                "PSI/KL-Div",
               ]}
               color="purple"
               icon={Target}
+            />
+
+            <InteractiveProjectCard
+              title="The Inbox Guard"
+              description="Email deliverability platform automating DNS configuration and monitoring"
+              details={[
+                "Automated SPF/DMARC/DKIM setup (70% DNS reduction)",
+                "Postmaster monitoring with Slack/email alerts",
+                "60% incident response time improvement",
+                "Multi-tenant support for 150M+ emails (99.9% uptime)",
+              ]}
+              technologies={[
+                "FastAPI",
+                "Next.js",
+                "Cloudflare",
+                "GCP",
+                "PostgreSQL",
+              ]}
+              color="green"
+              icon={Zap}
             />
           </div>
         </div>
