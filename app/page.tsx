@@ -1086,7 +1086,7 @@ export default function Portfolio() {
                 href: "tel:413-472-9935",
                 icon: Phone,
                 title: "Phone",
-                subtitle: "413-472-9935",
+                subtitle: "413-265-4152",
                 colorScheme: {
                   bg: "from-green-50",
                   border: "border-green-200",
