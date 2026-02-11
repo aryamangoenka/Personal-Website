@@ -6,18 +6,15 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Aryaman Goenka - AI/ML Developer & Computer Science Student",
-  description:
-    "Passionate Computer Science student at UMass Amherst specializing in AI/ML, neural networks, and full-stack development. Building the future with intelligent solutions.",
-  keywords:
-    "Aryaman Goenka, Computer Science, AI, Machine Learning, Neural Networks, Full Stack Developer, UMass Amherst",
+  title: "Aryaman Goenka",
+  description: "Software Engineer & ML Practitioner. CS @ UMass Amherst.",
+  keywords: "Aryaman Goenka, Software Engineer, Machine Learning, AI, UMass Amherst",
   authors: [{ name: "Aryaman Goenka" }],
   openGraph: {
-    title: "Aryaman Goenka - AI/ML Developer",
-    description: "Building intelligent solutions with AI/ML and modern web technologies",
+    title: "Aryaman Goenka",
+    description: "Software Engineer & ML Practitioner",
     type: "website",
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
