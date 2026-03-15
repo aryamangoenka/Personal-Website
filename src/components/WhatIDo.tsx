@@ -87,22 +87,22 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>FRONTEND</h3>
-              <h4>Building Interactive UIs</h4>
+              <h3>FULL STACK</h3>
+              <h4>Building Scalable Applications</h4>
               <p>
-                Crafting performant, responsive interfaces with modern frameworks.
-                From SPAs to micro-frontends, I deliver pixel-perfect experiences.
+                Crafting performant web applications with modern frameworks.
+                From frontend UIs to backend APIs, I deliver end-to-end solutions.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">React.js</div>
-                <div className="what-tags">Angular</div>
+                <div className="what-tags">React</div>
                 <div className="what-tags">Next.js</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">Material UI</div>
-                <div className="what-tags">HTML5</div>
-                <div className="what-tags">CSS3</div>
+                <div className="what-tags">FastAPI</div>
+                <div className="what-tags">Django REST</div>
+                <div className="what-tags">Flask</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">Supabase</div>
+                <div className="what-tags">Tailwind CSS</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -126,22 +126,22 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BACKEND</h3>
-              <h4>Scalable Server Architecture</h4>
+              <h3>ML & AI</h3>
+              <h4>Intelligent Systems</h4>
               <p>
-                Designing robust APIs and microservices. From CMS platforms to
-                complex business logic, I build backends that scale.
+                Building AI-powered applications and ML pipelines. From NLP
+                systems to model deployment, I create intelligent solutions.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Microservices</div>
+                <div className="what-tags">TensorFlow</div>
+                <div className="what-tags">LangGraph</div>
                 <div className="what-tags">Python</div>
+                <div className="what-tags">Celery</div>
+                <div className="what-tags">WebSockets</div>
+                <div className="what-tags">GitHub Actions</div>
+                <div className="what-tags">Cloudflare</div>
+                <div className="what-tags">Docker</div>
               </div>
               <div className="what-arrow"></div>
             </div>
