@@ -1,7 +1,5 @@
 import type { Config } from "tailwindcss";
 
-// all in fixtures is set to tailwind v3 as interims solutions
-
 const config: Config = {
     darkMode: ["class"],
     content: [
@@ -62,7 +60,17 @@ const config: Config = {
   				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
-  			}
+  			},
+  			teal: {
+  				DEFAULT: '#5eead4',
+  				dark: '#14b8a6',
+  				light: '#22d3ee',
+  			},
+  			navy: {
+  				DEFAULT: '#0a0e17',
+  				deep: '#050810',
+  				card: '#0d1220',
+  			},
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -71,25 +79,31 @@ const config: Config = {
   		},
   		keyframes: {
   			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
+  				from: { height: '0' },
+  				to: { height: 'var(--radix-accordion-content-height)' }
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
+  				from: { height: 'var(--radix-accordion-content-height)' },
+  				to: { height: '0' }
+  			},
+  			marquee: {
+  				'0%': { transform: 'translateX(0)' },
+  				'100%': { transform: 'translateX(-50%)' },
+  			},
+  			'timeline-glow': {
+  				'0%, 100%': {
+  					boxShadow: '0 0 8px rgba(94, 234, 212, 0.4), 0 0 20px rgba(94, 234, 212, 0.2)',
   				},
-  				to: {
-  					height: '0'
-  				}
-  			}
+  				'50%': {
+  					boxShadow: '0 0 16px rgba(94, 234, 212, 0.6), 0 0 40px rgba(94, 234, 212, 0.3)',
+  				},
+  			},
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			marquee: 'marquee 20s linear infinite',
+  			'timeline-glow': 'timeline-glow 2s ease-in-out infinite',
   		}
   	}
   },

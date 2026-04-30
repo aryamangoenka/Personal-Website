@@ -1,18 +1,36 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const serif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+})
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+})
+
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
-  title: "Aryaman Goenka",
-  description: "Software Engineer & ML Practitioner. CS @ UMass Amherst.",
-  keywords: "Aryaman Goenka, Software Engineer, Machine Learning, AI, UMass Amherst",
-  authors: [{ name: "Aryaman Goenka" }],
+  title: "Aryaman Goenka — Founder, Assemblr",
+  description:
+    "Founder building Assemblr at Founders, Inc. Agents, applied AI, and a few things in between.",
   openGraph: {
-    title: "Aryaman Goenka",
-    description: "Software Engineer & ML Practitioner",
+    title: "Aryaman Goenka — Founder, Assemblr",
+    description:
+      "Founder building Assemblr at Founders, Inc. Agents, applied AI, and a few things in between.",
     type: "website",
   },
 }
@@ -23,8 +41,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${serif.variable} ${sans.variable} ${mono.variable}`}
+    >
+      <body>{children}</body>
     </html>
   )
 }
